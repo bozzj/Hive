@@ -9,7 +9,6 @@ print ('Please input a Hive username:')
 acc = str(input())
 account = Account(acc, blockchain_instance=hive)
 print()
-
 print("accounts muting", acc, ":")
-print(account.get_muters(raw_name_list=True, limit=100))
+print('\n\.join(map(str,account.get_muters(raw_name_list=True, limit=100))))
 print()
